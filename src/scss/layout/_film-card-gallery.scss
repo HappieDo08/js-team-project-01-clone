@@ -43,11 +43,22 @@
     flex-basis: calc(100% / 3 - 16px);
   }
 }
+
 .card_img {
   width: 280px;
   height: 398px;
   margin-bottom: 10px;
   border-radius: 5px;
+
+  border-radius: 5px;
+    filter: grayscale(0.15);
+    transition: transform 0.3s ease-in-out, filter 0.2s ease-in-out;
+  
+    &:hover,
+    &:focus {
+      transform: scale(1.035);
+      filter: grayscale(0);
+    }
 
   @media screen and (min-width: 768px) {
     width: 336px;
